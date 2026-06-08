@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void ordem (int);
+
+int main (){
+  int n;
+  printf ("digite um numero: ");
+  scanf ("%d", &n);
+  printf ("ordem decrescente de %d a 0", n);
+  ordem (n);
+}
+
+void ordem (int n){
+  if(n==0){
+    printf ("%d", n);
+  }
+  else {
+    printf ("%d", n);
+    ordem (n-1);
+  }
+}
