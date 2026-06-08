@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void array (int [], int);
+
+int main (){
+  int v[10];
+  printf ("preencha o vetor: ");
+  for (int i =0; i<10; i++){
+    scanf ("%d", &v[i]);
+  }
+  array (v,10);
+}
+
+void array (int v[], int n){
+  if (n==1){
+    printf ("%d", v[0]);
+  }
+  else {
+    array (v, n-1);
+    printf ("%d", v[n-1]);
+  }
+}
