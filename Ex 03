@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int soma (int);
+
+int main (){
+  int n; 
+  printf ("digite o n: ");
+  scanf ("%d", &n);
+  printf ("soma dos n cubos: %d", soma(n));
+}
+
+int soma (int n){
+  if (n==1|| n==0){
+    return n;
+  }
+  else {
+    return soma (n-1) + (n*n*n);
+  }
+}
