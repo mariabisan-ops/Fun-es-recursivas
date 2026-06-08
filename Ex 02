@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int fat (int);
+
+int main (){
+  int n;
+  printf ("digite um numero: ");
+  scanf ("%d", &n);
+  printf ("fatorial: %d", fat(n));
+}
+
+int fat (int n){
+  if (n==1 || n==0) {
+    return 1;
+  }
+  else {
+    return fat (n-1) * n;
+  }
+}
