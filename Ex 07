@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int ordem (int);
+void ordem (int);
 
 int main (){
   int n;
