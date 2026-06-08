@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void pares (int);
+
+int main (){
+  int n;
+  printf ("digite um numero: ");
+  scanf ("%d", &n);
+  printf ("pares em ordem decrscente de %d a 0: ", n);
+  pares (n);
+}
+
+void pares (int n){
+  if (n==0){
+    printf ("%d", n);
+  }
+  else {
+    if (n%2==0) {
+      printf ("%d", n);
+    }
+    pares (n-1);
+  }
+}
