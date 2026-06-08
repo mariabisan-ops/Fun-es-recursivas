@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int multi (int, int);
+
+int main(){
+  int n1, n2;
+  printf ("digite primeiro numero: ");
+  scanf ("%d", &n1);
+  printf ("digite segundo numero: ");
+  scanf ("%d", &n2);
+  printf ("multiplicacao: %d", multi (n1, n2));
+}
+
+int multi (int n1, int n2){
+  if (n2==0){
+    return 0;
+  }
+  else {
+    return n1 + multi (n1, n2-1);
+  }
+}
