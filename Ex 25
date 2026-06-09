@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int tetranacci (int);
+
+int main (){
+  int n;
+  printf ("digite um valor n: ");
+  scanf ("%d", &n);
+  printf ("n-esimo termo da sequencia: %d", tetranacci (n));
+}
+
+int tetranacci (int n){
+  if (n==1||n==2||n==3){
+    return 0;
+  }
+  if (n==4){
+    return 1;
+  }
+  else {
+    return tetranacci (n-1) + tetranacci (n-2) + tetranacci (n-3) + tetranacci (n-4);
+  }
+}
