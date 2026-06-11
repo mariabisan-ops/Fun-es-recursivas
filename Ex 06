@@ -12,7 +12,7 @@ int main(){
 }
 
 int multi (int n1, int n2){
-  if (n2==0){
+  if (n2==0 || n1==0){
     return 0;
   }
   else {
