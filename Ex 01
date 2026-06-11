@@ -10,7 +10,7 @@ int main(){
 }
 
 int somaN(int n){
-  if(n==0 || n==1)
+  if(n==1)
     return n;
   else{
     return somaN(n-1)+n;
