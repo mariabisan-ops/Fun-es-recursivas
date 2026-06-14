@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int pot (int);
+int inverte(int);
+
+int main(){
+  int n;
+  printf("Digite um valor: ");
+  scanf("%d", &n);
+  printf("inversão: %d", inverte(n));
+}
+
+int pot (int n){
+  if (n < 10) {
+    return 1;
+  }
+  return 10 * pot(n / 10);
+}
+
+int inverte (int n) {
+  if (n < 10) {
+    return n;
+  }
+  return (n % 10) * pot(n / 10) + inverte(n / 10);
+}
